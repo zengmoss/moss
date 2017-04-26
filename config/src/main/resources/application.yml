@@ -10,8 +10,6 @@ spring:
                 git:
                     uri: https://github.com/zengmoss/cloud-config
                     searchPaths: cloud-config-repo
-                    username: mosszeng
-                    password: 80502321liang
     rabbitmq:
         host: localhost
         port: 5672
