@@ -1,0 +1,18 @@
+server:
+    port: 6010
+spring:
+    application:
+        name: eureka
+eureka:
+    instance:
+        hostname: DC12985.biostime.com
+        leaseRenewalIntervalInSeconds: 1
+        leaseExpirationDurationInSeconds: 2
+    client:
+        registerWithEureka: false
+        fetchRegistry: false
+        serviceUrl:
+            defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    server:
+        enableSelfPreservation: true        
+            
