@@ -16,6 +16,18 @@ public class HiController {
 	
     @RequestMapping("/hi")
     public String home(@RequestParam String name) {
-        return "hi "+ name + ",i am order,from port:" + port + ",and the remote message is " + message;
+        return "hi "+ name + "," + who() + ",and the remote message is " + message;
+    }
+    @RequestMapping("/orderBatchSubmit")
+    public String orderBatchSubmit(){
+    	return who() + "下单成功！";
+    }
+    @RequestMapping("/orderPay")
+    public String orderPay(){
+    	return who() + "订单支付完成，待发货！";
+    }
+
+    private String who(){
+    	return "i am order,from port:" + port;
     }
 }
