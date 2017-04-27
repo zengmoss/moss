@@ -11,4 +11,4 @@ spring:
 eureka:
     client:
         serviceUrl:
-            defaultZone: http://DC12985.biostime.com:6010/eureka/            
+            defaultZone: http://DC12985.biostime.com:6010/eureka/           
