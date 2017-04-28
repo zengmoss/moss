@@ -1,0 +1,15 @@
+spring:
+    application:
+        name: zipkin
+    cloud:
+        config:
+            label: master
+            profile: dev
+            discovery:
+                enabled: true
+                serviceId: config
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://DC12985.biostime.com:6010/eureka/      
+            
